@@ -9,8 +9,8 @@ function initLevel3(aPlayer, level4) {
             createEnemy(0, 300),
             createEnemy(700, 226),
             createEnemy(500, 226),
-            createEnemy(150,155),
-            createEnemy(760,155),
+            createEnemy(150,151),
+            createEnemy(760,151),
             createEnemy(250,76),
             createEnemy(500,76),
             createEnemy(610,76)    

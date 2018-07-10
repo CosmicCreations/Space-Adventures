@@ -57,6 +57,13 @@ window.onload = function () {
     }
   }
 
+function restart(aLevel){
+  if(aLife.num ==0){
+    currentLevel = level1
+  }
+} 
+
+
   function changeLevel(aLevel) {
     console.log("level: " + aLevel.nextLevel);
     currentLevel = aLevel.nextLevel;

@@ -10,7 +10,8 @@ function initPlayer() {
         y_velocity: 0,
         score: createScore(0),
         life: createLife(3),
-        isHit: false
+        isHit: false,
+        img: new Image()
     };
 
     newPlayer.controller = {
@@ -18,6 +19,7 @@ function initPlayer() {
         right: false,
         up: false
     }
+    newPlayer.img.src = "images/Player.png";
 
     return newPlayer;
 }
@@ -161,10 +163,12 @@ function updatePlayer(aPlayer, ledges, collectables, healths, enemies) {
 
 function renderPlayer(context, aPlayer) {
     //Player
-    context.fillStyle = "#ebd6ff";// hex for red
-    context.beginPath();
-    context.rect(aPlayer.x, aPlayer.y, aPlayer.width, aPlayer.height);
-    context.fill();
+    //context.fillStyle = "#ebd6ff";// hex for red
+    //context.beginPath();
+    //context.rect(aPlayer.x, aPlayer.y, aPlayer.width, aPlayer.height);
+    //context.fill();
+
+    context.drawImage(aPlayer.img, aPlayer.x, (aPlayer.y)-20,60,60);
 
     //Score
     renderScore(context, aPlayer.score);
