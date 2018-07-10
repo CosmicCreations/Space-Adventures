@@ -1,4 +1,4 @@
-window.alert("Welcome to Space Adventures! Collect blue points and advance to the next level. Collect red spheres to gain health. Use the arrow keys to navigate the player. Be careful of the green monster, you'll lose lives. Good Luck!" );
+window.alert("Welcome to Space Adventures! Collect stars and advance to the next level. Larger stars are worth double points! Collect hearts to gain health. Use the arrow keys to navigate the player. Be careful of the monsters, you'll lose lives. Good Luck!" );
 function initLevel1(aPlayer, level2) {
     var newLevel = {
         background: new Image(800, 480),

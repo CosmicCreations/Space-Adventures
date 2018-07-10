@@ -14,7 +14,7 @@ function increaseHealth(aLife){
 
 function checkGameOver(aLife, aController){
     if(aLife.num ==0){
-        window.alert("Game Over! You died!");
+        window.alert("Game Over! You died! Refresh the page to start again");
         resetController(aController);
     }
 }
